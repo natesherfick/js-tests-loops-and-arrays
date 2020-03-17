@@ -35,8 +35,11 @@ for (let i=0; i < arr.length; i++){
     }
 }
 
-object[number]=count
-return object
+if (count>1){
+    object[number]=count
+    return object
+}
+else{return number}
 
 }
 
@@ -51,10 +54,11 @@ return object
 
 function elemsTimesLength(arr) {
 
-
-
-
-    return
+    for(let i=0; i<arr.length; i++){
+        let product = arr[i]*arr.length
+        arr[i] = product
+    }
+    return arr
 }
 
 
@@ -69,6 +73,9 @@ function elemsTimesLength(arr) {
 
 function arrayFlattener(arr) {
 
+
+
+    
 }
 
 
